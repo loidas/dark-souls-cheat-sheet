@@ -463,7 +463,8 @@ var profilesKey = 'darksouls_profiles';
                 $(this).removeClass('done').addClass('in_progress');
             }
         // Update textarea for profile export
-        document.getElementById("profileText").value = JSON.stringify(profiles);
+        // loidas: Export currently not supported 
+        //document.getElementById("profileText").value = JSON.stringify(profiles);
         });
     }
 
