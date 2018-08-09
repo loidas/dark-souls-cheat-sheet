@@ -52,7 +52,7 @@ var profilesKey = 'darksouls_profiles';
             } else {
                 $('[data-id="'+id+'"] label').removeClass('completed');
             }
-            $(this).parent().parent().find('li > div > label > input[type="checkbox"]').each(function() {
+            $(this).parent().parent().parent().find('li > div > label > input[type="checkbox"]').each(function() {
                 profiles[profilesKey][profiles.current].checklistData[$(this).attr('id')] = isChecked;
                 $(this).prop('checked', isChecked);
             });
