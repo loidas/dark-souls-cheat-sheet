@@ -114,6 +114,7 @@ var profilesKey = 'darksouls_profiles';
                 populateChecklists();
                 restoreState(profiles.current);
             }
+            $('#profileModal').modal('hide');
         });
 
         $('#profileModalUpdate').click(function(event) {
@@ -143,6 +144,11 @@ var profilesKey = 'darksouls_profiles';
             populateProfiles();
             populateChecklists();
             restoreState(profiles.current);
+            $('#profileModal').modal('hide');
+        });
+
+        $('#profileModalClose').click(function(event) {
+            event.preventDefault();
             $('#profileModal').modal('hide');
         });
 
