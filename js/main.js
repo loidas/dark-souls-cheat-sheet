@@ -554,6 +554,8 @@ var profilesKey = 'darksouls_profiles';
      * Search and highlight functionality
      * ----------------------------------
      */
+    // loidas: Search curently not supported
+    /*
     $(function() {
         var jets = [new Jets({
             searchTag: '#playthrough_search',
@@ -586,6 +588,7 @@ var profilesKey = 'darksouls_profiles';
             $('#armors_list').highlight($(this).val());
         });
     });
+    */
 
     /*
      * -------------------------
