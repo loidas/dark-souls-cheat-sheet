@@ -28,8 +28,9 @@
                         <select class="form-control" style="width: auto;" id="themes"><!-- Gets filled by jQuery. --></select>
                         <select class="form-control" style="width: auto;" id="profiles"></select>
                         <span class="input-group-btn">
-                            <button class="btn" type="button" id="profileAdd">Add</button>
-                            <button class="btn" type="button" id="profileEdit">Edit</button>
+                            <button class="btn btn-default" type="button" id="profileAdd">Add</button>
+                            <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
+                            <button class="btn btn-default" type="button" id="profileNG+">NG+</button>
                         </span>
                    </div>
                 </div>
@@ -1407,6 +1408,27 @@
     </div>
     </div>
     </div>
+
+  <div id="NG+Modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title">Begin next journey?</h3>
+        </div>
+        <div class="modal-body">
+          If you begin the next journey, all progress on the "Playthrough" tab of this profile will be reset, while achievement checklists will be kept.
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-default" data-dismiss="modal">No</a>
+          <a href="#" id="NG+ModalYes" class="btn btn-danger">Yes</a>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
 
   <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
 
